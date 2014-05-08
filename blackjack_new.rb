@@ -129,10 +129,7 @@ while play_again == "Y"
     end
 
   #if/elsif statement to determine who won and display the score
-  if player_total > 21 && dealer_total > 21
-    puts "We both bust!"
-    puts "My final score was: #{dealer_total} and your final score was: #{player_total}"
-  elsif player_total > 21 && dealer_total <= 21
+  if player_total > 21 && dealer_total <= 21
     puts "Nice try! You lost this time!"
     puts "My final score was: #{dealer_total} and your final score was: #{player_total}" 
   elsif player_total <= 21 && dealer_total > 21
@@ -152,9 +149,7 @@ while play_again == "Y"
   puts "Would you like to play again? Y or N"
   play_again = gets.chomp.capitalize
 
-  if play_again == "N"
-    break
-  end
+  
 
 end
 
